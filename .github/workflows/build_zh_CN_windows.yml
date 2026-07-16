@@ -1,0 +1,196 @@
+name: Build zh_CN Windows
+
+on:
+  push:
+    branches:
+      - "zh_CN-*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GODOT_REPOSITORY: nikitalita/godot
+  GODOT_MAIN_SYNC_REF: gdre-wb-f964fa714f5
+  SCONSFLAGS: verbose=yes warnings=all werror=no module_text_server_fb_enabled=yes minizip=yes deprecated=yes angle=yes accesskit=no
+  SCONSFLAGS_TEMPLATE: disable_path_overrides=no no_editor_splash=yes module_camera_enabled=no module_mobile_vr_enabled=no module_upnp_enabled=no module_websocket_enabled=no module_csg_enabled=yes module_gridmap_enabled=yes use_static_cpp=yes builtin_freetype=yes builtin_libpng=yes builtin_zlib=yes builtin_libwebp=yes builtin_libvorbis=yes builtin_libogg=yes disable_3d=no
+  SCONS_CACHE_MSVC_CONFIG: true
+
+concurrency:
+  group: zh-cn-windows-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    name: ${{ matrix.name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows Editor
+            id: windows-editor-zh-cn
+            target: editor
+            sconsflags: debug_symbols=no tests=no
+          - name: Windows Template Release
+            id: windows-template-zh-cn
+            target: template_release
+            sconsflags: debug_symbols=no production=yes
+
+    steps:
+      - name: Configure Git line endings
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+
+      - name: Checkout Godot
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GODOT_REPOSITORY }}
+          ref: ${{ env.GODOT_MAIN_SYNC_REF }}
+
+      - name: Checkout GDRE Tools zh_CN
+        uses: actions/checkout@v4
+        with:
+          path: modules/gdsdecomp
+          fetch-depth: 0
+
+      - name: Copy module build actions
+        shell: bash
+        run: cp -R modules/gdsdecomp/.github/actions/* .github/actions/
+
+      - name: Restore Godot build cache
+        uses: ./.github/actions/godot-cache-restore
+        with:
+          cache-name: ${{ matrix.id }}-${{ matrix.target }}
+        continue-on-error: true
+
+      - name: Setup Python and SCons
+        uses: ./.github/actions/godot-deps
+
+      - name: Download pre-built ANGLE
+        shell: bash
+        run: |
+          if python ./misc/scripts/install_angle.py; then
+            echo "ANGLE SDK installed."
+          else
+            echo "::warning::ANGLE SDK installation failed; continuing without ANGLE."
+          fi
+
+      - name: Download Direct3D 12 SDK components
+        shell: bash
+        run: |
+          if python ./misc/scripts/install_d3d12_sdk_windows.py; then
+            echo "Direct3D 12 SDK installed."
+          else
+            echo "::warning::Direct3D 12 SDK installation failed; continuing without it."
+          fi
+        continue-on-error: true
+
+      - name: Setup Rust target
+        shell: bash
+        run: rustup target add x86_64-pc-windows-msvc
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Compile Windows editor
+        if: matrix.target == 'editor'
+        uses: ./.github/actions/godot-build
+        with:
+          scons-flags: ${{ env.SCONSFLAGS }} ${{ matrix.sconsflags }}
+          platform: windows
+          target: editor
+
+      - name: Compile Windows release template
+        if: matrix.target == 'template_release'
+        uses: ./.github/actions/godot-build
+        with:
+          scons-flags: arch=x86_64 ${{ env.SCONSFLAGS }} ${{ env.SCONSFLAGS_TEMPLATE }} ${{ matrix.sconsflags }}
+          platform: windows
+          target: template_release
+
+      - name: Save Godot build cache
+        uses: ./.github/actions/godot-cache-save
+        with:
+          cache-name: ${{ matrix.id }}-${{ matrix.target }}
+        continue-on-error: true
+
+      - name: Prepare build artifact
+        uses: ./.github/actions/godot-prepare-artifact
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GDRE_tools-${{ matrix.target }}-windows-zh_CN
+          path: ${{ github.workspace }}/bin/*
+          retention-days: 30
+
+  export:
+    needs: build
+    runs-on: windows-latest
+    name: Export Windows zh_CN package
+
+    steps:
+      - name: Checkout GDRE Tools zh_CN
+        uses: actions/checkout@v4
+        with:
+          path: modules/gdsdecomp
+          fetch-depth: 0
+
+      - name: Prepare workspace
+        shell: bash
+        run: |
+          mkdir -p bin
+          mkdir -p .github/actions
+          cp -R modules/gdsdecomp/.github/actions/* .github/actions/
+
+      - name: Download editor artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: GDRE_tools-editor-windows-zh_CN
+          path: bin
+
+      - name: Download template artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: GDRE_tools-template_release-windows-zh_CN
+          path: bin
+
+      - name: Download rcedit
+        uses: robinraju/release-downloader@v1.5
+        with:
+          repository: electron/rcedit
+          latest: true
+          fileName: rcedit-x64.exe
+          out-file-path: ${{ runner.tool_cache }}/rcedit
+
+      - name: Setup rcedit
+        shell: pwsh
+        run: |
+          Rename-Item "${{ runner.tool_cache }}\rcedit\rcedit-x64.exe" "${{ runner.tool_cache }}\rcedit\rcedit.exe"
+          "${{ runner.tool_cache }}\rcedit" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+      - name: Export standalone application
+        shell: pwsh
+        run: |
+          Set-Location "${{ github.workspace }}\modules\gdsdecomp\standalone"
+          pwsh -File "${{ github.workspace }}\modules\gdsdecomp\.scripts\export.ps1" "Windows Desktop" -path ".export\gdre_tools.exe" --no-debug
+
+      - name: Package Windows artifact
+        shell: pwsh
+        run: |
+          $source = "${{ github.workspace }}\modules\gdsdecomp\standalone\.export"
+          $package = "${{ github.workspace }}\GDRE_tools-v2.6.0-zh_CN-windows.zip"
+          Copy-Item "${{ github.workspace }}\modules\gdsdecomp\LICENSE" "$source\LICENSE"
+          Compress-Archive -Path "$source\*" -DestinationPath $package -CompressionLevel Optimal
+
+      - name: Upload Windows zh_CN package
+        uses: actions/upload-artifact@v4
+        with:
+          name: GDRE_tools-v2.6.0-zh_CN-windows
+          path: GDRE_tools-v2.6.0-zh_CN-windows.zip
+          if-no-files-found: error
+          retention-days: 90

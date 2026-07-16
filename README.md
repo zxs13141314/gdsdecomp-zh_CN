@@ -1,5 +1,9 @@
 # Godot RE Tools
 
+> **Simplified Chinese fork:** This repository is based on upstream v2.6.0 and is preparing a complete `zh_CN` localization. Windows packages are built by GitHub Actions. The current branch establishes the reproducible build baseline before translated resources are merged.
+
+> **简体中文分支：** 本仓库基于官方 v2.6.0，目标是完成工具界面及底层提示的完整简体中文化。Windows 安装包由 GitHub Actions 自动构建；当前阶段先建立可复现的构建基线，再逐步合入中文翻译。
+
 ## Introduction
 
 ![Code Screenshot](images/screenshot.png)

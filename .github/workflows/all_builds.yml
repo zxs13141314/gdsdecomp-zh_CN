@@ -1,26 +1,7 @@
 # TODO: we should break this up into multiple workflows, there are too many steps that only run on certain platforms
 name: Build Editor and Standalone
 on:
-  push:
-    paths:
-      - "**"
-      - "!**.md"
-      - "!LICENSE"
-      - "!.scripts/clang_format.sh"
-      - "!.github/**"
-      - "!.vscode/**"
-      - ".github/actions/**"
-      - ".github/workflows/all_builds.yml"
-  pull_request:
-    paths:
-      - "**"
-      - "!**.md"
-      - "!LICENSE"
-      - "!.scripts/clang_format.sh"
-      - "!.github/**"
-      - "!.vscode/**"
-      - ".github/actions/**"
-      - ".github/workflows/all_builds.yml"
+  workflow_dispatch:
 
 # Global Settings
 # SCONS_CACHE for windows must be set in the build environment

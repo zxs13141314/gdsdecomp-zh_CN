@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  GDRE_VERSION_OVERRIDE: 2.6.0-zh-cn
+  GDRE_VERSION_OVERRIDE: 2.6.0
   GODOT_REPOSITORY: nikitalita/godot
   GODOT_MAIN_SYNC_REF: gdre-wb-f964fa714f5
   SCONSFLAGS: verbose=yes warnings=all werror=no module_text_server_fb_enabled=yes minizip=yes deprecated=yes angle=yes accesskit=no

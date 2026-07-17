@@ -699,7 +699,7 @@ func _on_export_settings_button_pressed() -> void:
 
 
 func _on_gdre_config_dialog_config_changed(changed_settings: Dictionary[String, Array]) -> void:
-	if changed_settings.has("interface_language"):
+	if changed_settings.has(GDRELocale.SETTING_NAME):
 		GDRELocale.apply_selected()
 	GDRESettings.update_from_ephemeral_settings()
 	RESOURCE_PREVIEW.refresh()

@@ -567,7 +567,7 @@ func _process(_delta):
 	pass
 
 func _on_interface_config_changed(changed_settings: Dictionary[String, Array]) -> void:
-	if changed_settings.has("interface_language"):
+	if changed_settings.has(GDRELocale.SETTING_NAME):
 		GDRELocale.apply_selected()
 
 func _ready():

@@ -1,31 +1,32 @@
 import re
 import shutil
+from pathlib import Path
 from subprocess import PIPE, Popen
 
 
 SEMVER_REGEX = r"^[vV]?(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$"
 
 
-def doproc(cmd):
-    process = Popen(cmd, stdout=PIPE, stderr=PIPE)
+def doproc(cmd, cwd=None):
+    process = Popen(cmd, cwd=cwd, stdout=PIPE, stderr=PIPE)
     output, err = process.communicate()
     if not err:
         return output.decode("utf-8").strip()
     return None
 
 
-def get_version_info():
+def get_version_info(repository_dir=None):
     git = shutil.which("git")
     version_info = "unknown"
     if git is None:
         print("GDRE WARNING: cannot find git on path, unknown version will be saved in gdre_version.gen.h")
     else:
-        version_info = doproc([git, "describe", "--tags", "--abbrev=6"])
+        version_info = doproc([git, "describe", "--tags", "--abbrev=6"], cwd=repository_dir)
         if version_info is None:
             print("GDRE WARNING: git failed to run, unknown version will be saved in gdre_version.gen.h")
             version_info = "unknown"
         else:
-            res = doproc([git, "describe", "--exact-match", "--tags", "HEAD"])
+            res = doproc([git, "describe", "--exact-match", "--tags", "HEAD"], cwd=repository_dir)
             if not res:
                 splits = version_info.split("-")
                 build_info = splits[-1]
@@ -70,6 +71,7 @@ def get_version_info():
 
 
 def write_version_header(output_header_path):
-    version_info = get_version_info()
+    repository_dir = Path(output_header_path).resolve().parents[1]
+    version_info = get_version_info(repository_dir)
     with open(output_header_path, "w") as header_file:
         header_file.write(f'#define GDRE_VERSION "{version_info}"\n')

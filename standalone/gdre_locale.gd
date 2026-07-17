@@ -1,6 +1,8 @@
 class_name GDRELocale
 extends RefCounted
 
+const SETTING_NAME := "General/interface_language"
+
 enum InterfaceLanguage {
 	SYSTEM_DEFAULT,
 	ENGLISH,
@@ -8,7 +10,7 @@ enum InterfaceLanguage {
 }
 
 static func apply_selected() -> void:
-	var selected_language := int(GDREConfig.get_setting("interface_language"))
+	var selected_language := int(GDREConfig.get_setting(SETTING_NAME))
 	match selected_language:
 		InterfaceLanguage.ENGLISH:
 			TranslationServer.set_locale("en")

@@ -56,6 +56,11 @@ ui_find_previous={
 ]
 }
 
+[internationalization]
+
+locale/fallback="en"
+locale/translations=PackedStringArray("res://translations/gdre_tools.zh_CN.po")
+
 [rendering]
 
 textures/vram_compression/import_s3tc_bptc=true

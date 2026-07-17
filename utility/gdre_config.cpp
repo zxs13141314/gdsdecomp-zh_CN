@@ -217,6 +217,14 @@ HashMap<String, Ref<GDREConfigSetting>> GDREConfig::_init_default_settings() {
 				"",
 				true,
 				false)),
+		memnew(GDREConfigSettingEnum(
+				"interface_language",
+				"Interface language",
+				"Select the language used by the GDRE Tools interface.",
+				0,
+				"System default,English,Simplified Chinese",
+				false,
+				false)),
 		memnew(GDREConfigSetting(
 				"download_plugins",
 				"Download plugins",

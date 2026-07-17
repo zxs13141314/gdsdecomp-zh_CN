@@ -21,7 +21,24 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  validate-translations:
+    runs-on: ubuntu-latest
+    name: Validate zh_CN translations
+    steps:
+      - name: Checkout GDRE Tools zh_CN
+        uses: actions/checkout@v4
+
+      - name: Regenerate translation template
+        run: python tools/i18n/extract_translations.py
+
+      - name: Verify translation template is current
+        run: git diff --exit-code -- standalone/translations/gdre_tools.pot
+
+      - name: Validate Simplified Chinese translation
+        run: python tools/i18n/check_translations.py
+
   build:
+    needs: validate-translations
     runs-on: windows-latest
     name: ${{ matrix.name }}
     strategy:

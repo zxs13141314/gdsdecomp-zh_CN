@@ -566,7 +566,13 @@ func get_globs_files(globs: PackedStringArray) -> PackedStringArray:
 func _process(_delta):
 	pass
 
+func _on_interface_config_changed(changed_settings: Dictionary[String, Array]) -> void:
+	if changed_settings.has("interface_language"):
+		GDRELocale.apply_selected()
+
 func _ready():
+	GDRELocale.apply_selected()
+	%GdreConfigDialog.config_changed.connect(_on_interface_config_changed)
 	$version_lbl.text = GDRESettings.get_gdre_version()
 	# If CLI arguments were passed in, just quit
 	var args = get_sanitized_args()

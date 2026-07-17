@@ -28,14 +28,14 @@ const FILEPICKER_ICON = preload("res://gdre_icons/gdre_FileBrowse.svg")
 func create_section_label(text: String) -> Label:
 	var label: Label = Label.new()
 	label.label_settings = SECTION_LABEL_SETTINGS
-	label.text = text + " Settings"
+	label.text = tr("%s Settings") % tr(text)
 	label.horizontal_alignment = 1
 	return label
 
 func create_subsection_label(text: String) -> Label:
 	var label: Label = Label.new()
 	label.label_settings = SUBSECTION_LABEL_SETTINGS
-	label.text = text
+	label.text = tr(text)
 	label.horizontal_alignment = 1
 	return label
 
@@ -63,7 +63,7 @@ func create_new_subsection(text: String, section: VBoxContainer) -> VBoxContaine
 
 func create_new_subsubsection(text: String, subsection: VBoxContainer) -> VBoxContainer:
 	var subsubsection: FoldableContainer = FoldableContainer.new()
-	subsubsection.title = text
+	subsubsection.title = tr(text)
 	subsubsection.title_alignment = 1
 	if subsection.get_child_count() != 2: # including the label and h_separator
 		subsection.add_child(create_h_separator())
@@ -89,7 +89,7 @@ func make_button_hbox(setting: GDREConfigSetting, button: Control, label: Label,
 
 func make_button_label(text: String) -> Label:
 	var label: Label = Label.new()
-	label.text = text
+	label.text = tr(text)
 	return label
 
 
@@ -203,7 +203,7 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 	if setting.is_filepicker() or setting.is_dirpicker():
 		button = Button.new()
 		if setting.is_virtual_setting():
-			button.text = "Select %s..." % ["File" if setting.is_filepicker() else "Directory"]
+			button.text = tr("Select %s...") % [tr("File") if setting.is_filepicker() else tr("Directory")]
 		else:
 			button.text = ""
 			button.icon = FILEPICKER_ICON
@@ -217,14 +217,14 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 		var items = setting.get_list_of_possible_values()
 		for val in items.keys(): # the keys are the values, the values are the descriptions
 			var desc = items[val]
-			button.add_item(desc, -1)
+			button.add_item(tr(desc), -1)
 			var idx = button.get_item_count() - 1
 			if (val == value):
 				button.selected = idx
 			button.set_item_metadata(idx, val)
 
 		var label: Label = make_button_label(setting.get_brief_description())
-		label.tooltip_text = setting.get_description()
+		label.tooltip_text = tr(setting.get_description())
 		control = make_button_hbox(setting, button, label)
 		button.item_selected.connect(
 			func(idx):
@@ -235,7 +235,7 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 		button = CheckButton.new()
 		button.button_pressed = value
 
-		button.text = setting.get_brief_description()
+		button.text = tr(setting.get_brief_description())
 		button.toggled.connect(func(val): setting_callback(setting, val, button))
 		add_reset_button_to_toggle_button(setting, button)
 		control = button
@@ -246,7 +246,7 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 		button.max_value = setting.get_max_value()
 		button.step = setting.get_step_value()
 		var label: Label = make_button_label(setting.get_brief_description())
-		label.tooltip_text = setting.get_description()
+		label.tooltip_text = tr(setting.get_description())
 		control = make_button_hbox(setting, button, label)
 		button.value_changed.connect(func(val): setting_callback(setting, val, control))
 	elif setting.get_type() == TYPE_FLOAT:
@@ -256,7 +256,7 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 		button.max_value = setting.get_max_value()
 		button.step = setting.get_step_value()
 		var label: Label = make_button_label(setting.get_brief_description())
-		label.tooltip_text = setting.get_description()
+		label.tooltip_text = tr(setting.get_description())
 		control = make_button_hbox(setting, button, label)
 		button.value_changed.connect(func(val): setting_callback(setting, val, control))
 	elif setting.get_type() == TYPE_STRING:
@@ -265,12 +265,12 @@ func create_setting_button(setting: GDREConfigSetting) -> Control:
 		button.custom_minimum_size = Vector2i(80,0)
 		button.text = value
 		var label: Label = make_button_label(setting.get_brief_description())
-		label.tooltip_text = setting.get_description()
+		label.tooltip_text = tr(setting.get_description())
 		control = make_button_hbox(setting, button, label)
 		button.text_changed.connect(func(val): setting_callback(setting, val, control))
 
-	button.tooltip_text = setting.get_description()
-	control.tooltip_text = setting.get_description()
+	button.tooltip_text = tr(setting.get_description())
+	control.tooltip_text = tr(setting.get_description())
 
 	setting_button_map[setting] = button
 	return control

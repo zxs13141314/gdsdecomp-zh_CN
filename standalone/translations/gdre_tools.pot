@@ -1,0 +1,1544 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GDRE Tools v2.6.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: standalone/gdre_patch_pck.tscn:297
+msgid "\"Relative from...\" mapping"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:280
+msgid "\"Relative to...\" mapping"
+msgstr ""
+
+#: standalone/gdre_main.tscn:237
+msgid "$$$"
+msgstr ""
+
+#: gui/find_replace_bar.cpp:409
+msgid "%d replaced."
+msgstr ""
+
+#: gui/texture_layered_previewer.cpp:233
+#: gui/texture_previewer.cpp:253
+msgid "%s Mipmaps"
+msgstr ""
+
+#: standalone/gdre_config_dialog.gd:31
+msgid "%s Settings"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:242
+msgid "(Optional)"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:132
+#: standalone/gdre_new_pck.tscn:148
+msgid "*.gd,*.tres, etc."
+msgstr ""
+
+#: standalone/gdre_compile.tscn:78
+#: standalone/gdre_decompile.tscn:99
+msgid "--- Please select bytecode version ---"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:156
+#: standalone/gdre_new_pck.tscn:164
+msgid "."
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:88
+msgid "0"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:91
+msgid "0 (Godot 1.x, 2.x)"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:78
+#: standalone/gdre_recover.tscn:121
+msgid "0.0.0"
+msgstr ""
+
+#: standalone/gdre_media_player.tscn:136
+msgid "0:00.0 / 0:00.0"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:93
+msgid "1 (Godot 3.x)"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:95
+msgid "2 (Godot 4.0-4.4)"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:97
+msgid "3 (Godot 4.5-4.6)"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:99
+msgid "4 (Godot 4.7+)"
+msgstr ""
+
+#: standalone/gdre_main.tscn:64
+msgid "<e.g. 000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F>"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:143
+msgid "<info text>"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:149
+msgid "<NONE>"
+msgstr ""
+
+#: standalone/gdre_resource_preview.tscn:88
+msgid "@tool\nclass_name FOO\nextends Node\n@export var string_prop: String = \"haldo\"\nfunc thingy():\n\tvar foo = 1\n\tvar bl = true\n\tvar bar = \"var\"\n\tvar baz: Color = Color(0.1,0.2,0.3)\n\tvar far: float = baz.r\n\tvar string_name: StringName = &\"haldo\"\n\tvar barf: NodePath = ^\"farts/lmao\"\n\t$Cam / Camera2D.drag_margin_left = margin\n\t$Cam / Camera2D.drag_margin_right = margin\n\tvar node_id = $Path/To/Node\n\tvar node_id_2 = $Path/To/\"A\"/Node/With/\"Some Spaces\"/In/It.thing()\n# this is a really long comment that is going to wrap around the text box!\n\tlerp()\n\tpass\n#  haldodelimiter_comments\n# NOTE: This is a note\n# BUG: This is a warning\n# ALERT: this is a critical"
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:166
+msgid "[b]Important Notes[/b]"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:134
+msgid "[b]Info:[/b]"
+msgstr ""
+
+#: standalone/gdre_resource_preview.tscn:177
+msgid "[b]Path:[/b]\n[b]Type:[/b]\n[b]Format:[/b]"
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:184
+msgid "[b]Totals[/b]"
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:119
+msgid "[b]Use Godot editor version <GODOT_VER> to edit the project.[/b]\n<CUSTOM_VER_NOTE>"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:112
+msgid "[b]Version:[/b]"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:263
+msgid "[color=#FF0000]ERROR[/color]"
+msgstr ""
+
+#: editor/gdre_editor.cpp:330
+#: editor/gdre_editor.cpp:382
+msgid "About Godot RE Tools"
+msgstr ""
+
+#: standalone/gdre_main.tscn:159
+msgid "About Godot RE Tools..."
+msgstr ""
+
+#: utility/gdre_config.cpp:284
+msgid "Add .godot/imported/ (or .import/ for Godot 3) to the git repo."
+msgstr ""
+
+#: standalone/gdre_compile.tscn:56
+#: standalone/gdre_decompile.tscn:54
+msgid "Add Files..."
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:48
+#: editor/gdre_dec_dlg.cpp:49
+msgid "Add files..."
+msgstr ""
+
+#: utility/gdre_config.cpp:284
+msgid "Add imports to git repo"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:247
+msgid "Add PCK(s)"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:58
+msgid "Add Translation..."
+msgstr ""
+
+#: utility/gdre_config.cpp:256
+msgid "Ask for download"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1029
+#: editor/gdre_editor.cpp:1100
+#: editor/gdre_editor.cpp:1149
+#: editor/gdre_editor.cpp:1216
+#: editor/gdre_editor.cpp:628
+#: editor/gdre_editor.cpp:718
+#: editor/gdre_editor.cpp:866
+#: editor/gdre_editor.cpp:872
+#: editor/gdre_editor.cpp:926
+#: editor/gdre_editor.cpp:978
+#: utility/pck_dumper.cpp:113
+#: utility/pck_dumper.cpp:276
+msgid "At least one error was detected!"
+msgstr ""
+
+#: utility/gdre_config.cpp:102
+#: utility/gdre_config.cpp:189
+msgid "Auto-detect"
+msgstr ""
+
+#: utility/gdre_config.cpp:228
+msgid "Automatically detect binary plugin versions and download them from the asset library"
+msgstr ""
+
+#: editor/gdre_editor.cpp:760
+#: editor/gdre_editor.cpp:762
+msgid "Broken:"
+msgstr ""
+
+#: utility/gdre_config.cpp:122
+msgid "By default, the C# language level is selected based on the default language level of the target framework of the module.\nThis setting forces the C# language level to be the specified value."
+msgstr ""
+
+#: utility/gdre_config.cpp:373
+msgid "By default, the exporter will only set KHR_node_visibility as an optional extension.\nThis setting forces the exporter to require the extension regardless of engine version."
+msgstr ""
+
+#: utility/gdre_config.cpp:29
+#: utility/gdre_config.cpp:85
+msgid "Bytecode"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:193
+msgid "C# Assembly ⚠️"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:99
+#: editor/gdre_dec_dlg.cpp:100
+#: editor/gdre_editor.cpp:117
+#: editor/gdre_enc_key.cpp:36
+#: editor/gdre_npck_dlg.cpp:116
+#: editor/gdre_pck_dlg.cpp:114
+#: gui/gdre_progress.cpp:546
+#: standalone/gdre_config_dialog.tscn:206
+#: standalone/gdre_main.tscn:105
+#: standalone/gdre_patch_pck.tscn:332
+msgid "Cancel"
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:136
+msgid "Certain assets have been written to the .assets directory!"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:145
+msgid "Check"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:155
+msgid "Check all"
+msgstr ""
+
+#: editor/gdre_editor.cpp:759
+#: editor/gdre_editor.cpp:762
+msgid "Checked:"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:144
+#: standalone/gdre_recover.tscn:154
+msgid "Checks all shown files"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:209
+msgid "Clear"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:58
+#: editor/gdre_dec_dlg.cpp:59
+#: standalone/gdre_compile.tscn:66
+#: standalone/gdre_decompile.tscn:64
+msgid "Clear files"
+msgstr ""
+
+#: utility/gdre_config.cpp:273
+msgid "Clear output directory except git before full recovery"
+msgstr ""
+
+#: utility/gdre_config.cpp:273
+msgid "Clear the output directory except for the .git directory before running a full recovery (i.e. no includes/excludes)"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:96
+#: editor/gdre_editor.cpp:674
+#: editor/gdre_editor.cpp:718
+#: editor/gdre_editor.cpp:720
+msgid "Compile"
+msgstr ""
+
+#: editor/gdre_editor.cpp:352
+#: editor/gdre_editor.cpp:390
+#: standalone/gdre_main.tscn:196
+msgid "Compile .GD script files..."
+msgstr ""
+
+#: utility/gdre_config.cpp:344
+msgid "Compile after decompile"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:19
+#: standalone/gdre_compile.tscn:9
+msgid "Compile GDScript"
+msgstr ""
+
+#: utility/gdre_config.cpp:344
+msgid "Compile the C# project after decompiling.\nThis is done to prevent editor errors when first opening the project in the editor.\nThis requires that you have the dotnet sdk installed."
+msgstr ""
+
+#: editor/gdre_editor.cpp:674
+msgid "compiling"
+msgstr ""
+
+#: editor/gdre_editor.cpp:671
+msgid "Compiling files..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:361
+#: editor/gdre_editor.cpp:393
+#: standalone/gdre_main.tscn:205
+msgid "Convert binary resources to text..."
+msgstr ""
+
+#: standalone/gdre_main.tscn:219
+msgid "Convert MP3 Streams to MP3..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:963
+#: editor/gdre_editor.cpp:978
+#: editor/gdre_editor.cpp:980
+msgid "Convert OGG samples"
+msgstr ""
+
+#: editor/gdre_editor.cpp:365
+#: editor/gdre_editor.cpp:397
+#: standalone/gdre_main.tscn:216
+msgid "Convert OGG Samples to OGG..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:1072
+#: editor/gdre_editor.cpp:1100
+#: editor/gdre_editor.cpp:1102
+#: editor/gdre_editor.cpp:1192
+#: editor/gdre_editor.cpp:1216
+#: editor/gdre_editor.cpp:1218
+msgid "Convert resources"
+msgstr ""
+
+#: editor/gdre_editor.cpp:364
+#: editor/gdre_editor.cpp:396
+#: standalone/gdre_main.tscn:213
+msgid "Convert stream textures to PNG..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:362
+#: editor/gdre_editor.cpp:394
+#: standalone/gdre_main.tscn:208
+msgid "Convert text resources to binary..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:1009
+#: editor/gdre_editor.cpp:1029
+#: editor/gdre_editor.cpp:1031
+msgid "Convert textures"
+msgstr ""
+
+#: editor/gdre_editor.cpp:908
+#: editor/gdre_editor.cpp:926
+#: editor/gdre_editor.cpp:928
+msgid "Convert WAV samples"
+msgstr ""
+
+#: editor/gdre_editor.cpp:366
+#: editor/gdre_editor.cpp:398
+#: standalone/gdre_main.tscn:222
+msgid "Convert WAV Samples to WAV..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:1005
+#: editor/gdre_editor.cpp:1068
+#: editor/gdre_editor.cpp:1188
+#: editor/gdre_editor.cpp:903
+#: editor/gdre_editor.cpp:953
+msgid "Converting files..."
+msgstr ""
+
+#: utility/gdre_config.cpp:313
+msgid "Copy referenced assemblies"
+msgstr ""
+
+#: utility/gdre_config.cpp:313
+msgid "Copy referenced assemblies to the project directory."
+msgstr ""
+
+#: utility/gdre_config.cpp:351
+msgid "Copy template_release plugins to editor plugin"
+msgstr ""
+
+#: utility/gdre_config.cpp:279
+msgid "Create a git repo in the output directory after exporting.\nRequires git to be installed on the system."
+msgstr ""
+
+#: utility/gdre_config.cpp:399
+msgid "Create a lossless .png copy of exported textures in '<OUTPUT_DIR>/.assets' if the texture is stored in a lossy format (e.g. jpeg)"
+msgstr ""
+
+#: utility/gdre_config.cpp:323
+msgid "Create additional projects for project references"
+msgstr ""
+
+#: utility/gdre_config.cpp:393
+msgid "Create debug copies"
+msgstr ""
+
+#: utility/gdre_config.cpp:279
+msgid "Create git repo in recovered project"
+msgstr ""
+
+#: utility/gdre_config.cpp:399
+msgid "Create lossless copy"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:15
+msgid "Create New Pck..."
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:18
+msgid "Create new PCK..."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:90
+msgid "Create patch PCK"
+msgstr ""
+
+#: editor/gdre_editor.cpp:342
+#: editor/gdre_editor.cpp:386
+#: standalone/gdre_main.tscn:176
+msgid "Create PCK archive from folder..."
+msgstr ""
+
+#: utility/gdre_config.cpp:122
+#: utility/gdre_config.cpp:308
+#: utility/gdre_config.cpp:313
+#: utility/gdre_config.cpp:318
+#: utility/gdre_config.cpp:323
+#: utility/gdre_config.cpp:328
+#: utility/gdre_config.cpp:333
+#: utility/gdre_config.cpp:338
+#: utility/gdre_config.cpp:344
+msgid "CSharp"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:154
+msgid "CSV File..."
+msgstr ""
+
+#: editor/gdre_dec_dlg.cpp:97
+#: editor/gdre_editor.cpp:584
+#: editor/gdre_editor.cpp:590
+#: editor/gdre_editor.cpp:596
+#: editor/gdre_editor.cpp:628
+#: editor/gdre_editor.cpp:630
+msgid "Decompile"
+msgstr ""
+
+#: editor/gdre_editor.cpp:351
+#: editor/gdre_editor.cpp:389
+#: standalone/gdre_main.tscn:193
+msgid "Decompile .GDC/.GDE script files..."
+msgstr ""
+
+#: editor/gdre_dec_dlg.cpp:20
+#: standalone/gdre_decompile.tscn:10
+msgid "Decompile GDScript"
+msgstr ""
+
+#: editor/gdre_editor.cpp:596
+msgid "decompiling"
+msgstr ""
+
+#: editor/gdre_editor.cpp:594
+msgid "Decompiling files..."
+msgstr ""
+
+#: utility/gdre_config.cpp:203
+msgid "Default parent folder for recovery"
+msgstr ""
+
+#: utility/gdre_config.cpp:238
+msgid "Delete auto-converted files"
+msgstr ""
+
+#: utility/gdre_config.cpp:238
+msgid "Delete auto-converted files (*.gdc, etc.) after exporting. If disabled, the files will be moved to the `.autoconverted` folder."
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:89
+#: editor/gdre_dec_dlg.cpp:90
+#: editor/gdre_pck_dlg.cpp:104
+#: standalone/gdre_compile.tscn:84
+#: standalone/gdre_decompile.tscn:105
+msgid "Destination folder:"
+msgstr ""
+
+#: utility/gdre_config.cpp:308
+msgid "Detect and write NuGet package references to the project file instead of assembly references."
+msgstr ""
+
+#: standalone/gdre_config_dialog.gd:206
+msgid "Directory"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:58
+msgid "Directory:"
+msgstr ""
+
+#: utility/gdre_config.cpp:404
+msgid "Disable translation key recovery"
+msgstr ""
+
+#: utility/gdre_config.cpp:404
+msgid "Disable translation key recovery.\nThis will skip the translation key recovery process entirely."
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:104
+msgid "Do more stuff"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:184
+msgid "Do other stuff"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:100
+#: standalone/gdre_config_dialog.tscn:143
+#: standalone/gdre_config_dialog.tscn:180
+msgid "Do stuff"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:53
+msgid "Do you want to discard current changes?"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:59
+msgid "Don't ask again"
+msgstr ""
+
+#: utility/gdre_config.cpp:228
+msgid "Download plugins"
+msgstr ""
+
+#: utility/gdre_config.cpp:422
+msgid "Dump resource strings"
+msgstr ""
+
+#: utility/gdre_config.cpp:422
+msgid "Dumps collected resource strings to '<OUTPUT_DIR>/.assets/resource_strings.stringdump'"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:210
+msgid "Embed"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:118
+msgid "Embed into EXE"
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:107
+#: standalone/gdre_new_pck.tscn:202
+msgid "Embed PCK:"
+msgstr ""
+
+#: utility/gdre_config.cpp:338
+msgid "Emit IL annotation comments"
+msgstr ""
+
+#: utility/gdre_config.cpp:338
+msgid "Emit ILInstruction annotations as comments for statement/expression nodes.\nIntended for debug verification of annotation propagation."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:187
+#: standalone/gdre_patch_translation.tscn:191
+#: standalone/gdre_patch_translation.tscn:195
+#: standalone/gdre_patch_translation.tscn:199
+#: standalone/gdre_patch_translation.tscn:203
+#: standalone/gdre_patch_translation.tscn:207
+#: standalone/gdre_patch_translation.tscn:211
+#: standalone/gdre_patch_translation.tscn:215
+#: standalone/gdre_patch_translation.tscn:219
+#: standalone/gdre_patch_translation.tscn:223
+#: standalone/gdre_patch_translation.tscn:227
+#: standalone/gdre_patch_translation.tscn:231
+#: standalone/gdre_patch_translation.tscn:235
+msgid "en_us"
+msgstr ""
+
+#: utility/gdre_config.cpp:333
+msgid "Enable collection initializer lifting"
+msgstr ""
+
+#: utility/gdre_config.cpp:409
+msgid "Enable more thorough translation key recovery.\nWARNING: this is not guaranteed to find all the keys in the translation file and may massively increase the time it takes to run."
+msgstr ""
+
+#: utility/gdre_config.cpp:333
+msgid "Enable the LiftCollectionInitializers transform.\nIf disabled, the legacy RemoveBogusBaseConstructorCalls transform is used."
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:116
+msgid "Encrypt Directory"
+msgstr ""
+
+#: bytecode/bytecode_base.cpp:100
+msgid "Encryption Error"
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:79
+#: standalone/gdre_new_pck.tscn:108
+msgid "Encryption:"
+msgstr ""
+
+#: utility/gdre_config.cpp:220
+msgid "English"
+msgstr ""
+
+#: editor/gdre_editor.cpp:739
+msgid "Error opening encrypted PCK file:"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1258
+msgid "Error opening folder (or empty folder):"
+msgstr ""
+
+#: editor/gdre_editor.cpp:741
+msgid "Error opening PCK file:"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:140
+msgid "Exclude Filters"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1110
+msgid "Export resource"
+msgstr ""
+
+#: editor/gdre_editor.cpp:367
+#: editor/gdre_editor.cpp:399
+msgid "Export Resource..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:1133
+#: editor/gdre_editor.cpp:1149
+#: editor/gdre_editor.cpp:1151
+msgid "Export resources"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:252
+msgid "Export Settings..."
+msgstr ""
+
+#: utility/gdre_config.cpp:142
+#: utility/gdre_config.cpp:351
+#: utility/gdre_config.cpp:356
+#: utility/gdre_config.cpp:362
+#: utility/gdre_config.cpp:368
+#: utility/gdre_config.cpp:373
+#: utility/gdre_config.cpp:378
+#: utility/gdre_config.cpp:383
+#: utility/gdre_config.cpp:388
+#: utility/gdre_config.cpp:393
+#: utility/gdre_config.cpp:399
+#: utility/gdre_config.cpp:404
+#: utility/gdre_config.cpp:409
+#: utility/gdre_config.cpp:415
+#: utility/gdre_config.cpp:422
+msgid "Exporter"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:153
+msgid "Exporter Settings"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1128
+msgid "Exporting resources..."
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:111
+msgid "Extra tag:"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:274
+msgid "Extract"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:263
+msgid "Extract Only"
+msgstr ""
+
+#: editor/gdre_editor.cpp:870
+msgid "Extract report"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:214
+msgid "Extract to..."
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:111
+msgid "Extract..."
+msgstr ""
+
+#: utility/pck_dumper.cpp:242
+msgid "Extracting files..."
+msgstr ""
+
+#: bytecode/bytecode_base.cpp:98
+msgid "FAE doesn't exist...???"
+msgstr ""
+
+#: standalone/gdre_config_dialog.gd:206
+msgid "File"
+msgstr ""
+
+#: bytecode/bytecode_base.cpp:102
+msgid "File Error"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:47
+msgid "File name"
+msgstr ""
+
+#: editor/gdre_editor.cpp:98
+msgid "Files already exist!"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:185
+msgid "Files to patch..."
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:69
+#: standalone/gdre_patch_pck.tscn:83
+msgid "Files:"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:157
+#: standalone/gdre_recover.tscn:168
+msgid "Filter Files"
+msgstr ""
+
+#: editor/gdre_editor.cpp:104
+msgid "Following files already exist and will be overwritten:"
+msgstr ""
+
+#: utility/gdre_config.cpp:393
+msgid "For development."
+msgstr ""
+
+#: utility/gdre_config.cpp:85
+msgid "Force Bytecode Revision"
+msgstr ""
+
+#: utility/gdre_config.cpp:122
+msgid "Force C# Language Level"
+msgstr ""
+
+#: standalone/gdre_decompile.tscn:70
+msgid "Force Enable All Versions"
+msgstr ""
+
+#: utility/gdre_config.cpp:368
+msgid "Force export multi root"
+msgstr ""
+
+#: utility/gdre_config.cpp:356
+msgid "Force lossless images"
+msgstr ""
+
+#: utility/gdre_config.cpp:373
+msgid "Force require KHR_node_visibility extension"
+msgstr ""
+
+#: utility/gdre_config.cpp:245
+msgid "Force single-threaded mode"
+msgstr ""
+
+#: utility/gdre_config.cpp:245
+msgid "Forces all tasks to run on the main thread"
+msgstr ""
+
+#: utility/gdre_config.cpp:356
+msgid "Forces images to be saved as lossless PNGs when exporting to GLTF, regardless of the original image format"
+msgstr ""
+
+#: utility/gdre_config.cpp:85
+msgid "Forces the bytecode revision to be the specified value."
+msgstr ""
+
+#: utility/gdre_config.cpp:368
+msgid "Forces the export to export in multi-root mode, even if the scene is a single root"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:270
+msgid "Full Recovery"
+msgstr ""
+
+#: utility/gdre_config.cpp:351
+msgid "GDExtension"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:53
+msgid "GDExtension plugins have been detected.\nDo you want to automatically detect and download?"
+msgstr ""
+
+#: editor/gdre_editor.cpp:348
+#: standalone/gdre_main.tscn:190
+msgid "GDScript"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:128
+#: standalone/gdre_config_dialog.tscn:88
+msgid "General"
+msgstr ""
+
+#: utility/gdre_config.cpp:279
+#: utility/gdre_config.cpp:284
+msgid "git"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:172
+#: utility/gdre_config.cpp:356
+#: utility/gdre_config.cpp:362
+#: utility/gdre_config.cpp:368
+#: utility/gdre_config.cpp:373
+#: utility/gdre_config.cpp:378
+#: utility/gdre_config.cpp:383
+#: utility/gdre_config.cpp:388
+#: utility/gdre_config.cpp:393
+msgid "GLTF"
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:83
+msgid "Godot engine version (\"Major\".\"Minor\".\"Patch\", \"Patch\" value should be \"0\" for all pre 3.2 versions):"
+msgstr ""
+
+#: utility/gdre_config.cpp:323
+msgid "If a project reference is detected, create an additional project and add it to the solution."
+msgstr ""
+
+#: utility/gdre_config.cpp:351
+msgid "If the plugin was not downloaded, copy the template_release plugin (the library distributed with the game) to the editor plugin path (required for using the plugin in the editor)."
+msgstr ""
+
+#: utility/gdre_config.cpp:378
+msgid "Ignore missing dependencies"
+msgstr ""
+
+#: utility/gdre_config.cpp:378
+msgid "Ignore missing dependencies when exporting the scene."
+msgstr ""
+
+#: editor/gdre_editor.cpp:285
+#: standalone/gdre_main.tscn:241
+msgid "Important: Legal Notice"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:124
+msgid "Include Filters:"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+#: utility/gdre_config.cpp:297
+msgid "Indent"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+msgid "Indent type"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:49
+msgid "Info"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:37
+msgid "Information:"
+msgstr ""
+
+#: utility/gdre_config.cpp:220
+msgid "Interface language"
+msgstr ""
+
+#: editor/gdre_editor.cpp:590
+msgid "Invalid bytecode version!"
+msgstr ""
+
+#: bytecode/bytecode_base.cpp:359
+#: bytecode/gdscript_v1_tokenizer_compat.cpp:1164
+msgid "Invalid constant"
+msgstr ""
+
+#: editor/gdre_enc_key.cpp:91
+msgid "Invalid encryption key (must be 64 characters long hex)"
+msgstr ""
+
+#: bytecode/bytecode_base.cpp:1202
+msgid "Invalid token"
+msgstr ""
+
+#: utility/gdre_config.cpp:213
+msgid "Last GDRE version used"
+msgstr ""
+
+#: utility/gdre_config.cpp:262
+msgid "Last showed disclaimer"
+msgstr ""
+
+#: utility/gdre_config.cpp:29
+msgid "Load a custom bytecode file."
+msgstr ""
+
+#: utility/gdre_config.cpp:142
+msgid "Load a key hint file to use for the translation exporter"
+msgstr ""
+
+#: utility/gdre_config.cpp:29
+msgid "Load Custom Bytecode"
+msgstr ""
+
+#: utility/gdre_config.cpp:233
+msgid "Load embedded zips"
+msgstr ""
+
+#: utility/gdre_config.cpp:233
+msgid "Load embedded zips within the project pack as part of project loading/recovery"
+msgstr ""
+
+#: utility/gdre_config.cpp:142
+msgid "Load key hint file"
+msgstr ""
+
+#: utility/gdre_settings.cpp:2308
+msgid "Loading GDScript cache..."
+msgstr ""
+
+#: utility/gdre_settings.cpp:2419
+msgid "Loading import files..."
+msgstr ""
+
+#: utility/gdre_settings.cpp:3563
+msgid "Loading packed OBDB resources..."
+msgstr ""
+
+#: utility/gdre_settings.cpp:2811
+msgid "Loading resource strings..."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:175
+msgid "Locales to patch..."
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:99
+msgid "Log file written to <LOG_FILE_URI>\n[b]Please include this file when reporting an issue![/b]"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:195
+msgid "Map selected to Folder..."
+msgstr ""
+
+#: utility/gdre_config.cpp:178
+msgid "Max cores for threaded tasks"
+msgstr ""
+
+#: gui/texture_layered_previewer.cpp:233
+#: gui/texture_layered_previewer.cpp:240
+#: gui/texture_previewer.cpp:253
+#: gui/texture_previewer.cpp:263
+msgid "Memory: %s"
+msgstr ""
+
+#: utility/gdre_config.cpp:409
+msgid "More thorough translation key recovery"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1258
+#: editor/gdre_editor.cpp:1273
+#: editor/gdre_editor.cpp:1278
+msgid "New PCK"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:171
+#: editor/gdre_dec_dlg.cpp:173
+msgid "No bytecode version selected"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:161
+#: editor/gdre_dec_dlg.cpp:162
+#: editor/gdre_pck_dlg.cpp:309
+msgid "No destination folder selected"
+msgstr ""
+
+#: editor/gdre_enc_key.cpp:88
+msgid "No encryption key"
+msgstr ""
+
+#: editor/gdre_editor.cpp:1031
+#: editor/gdre_editor.cpp:1102
+#: editor/gdre_editor.cpp:1151
+#: editor/gdre_editor.cpp:1218
+#: editor/gdre_editor.cpp:630
+#: editor/gdre_editor.cpp:720
+#: editor/gdre_editor.cpp:870
+#: editor/gdre_editor.cpp:928
+#: editor/gdre_editor.cpp:980
+#: utility/pck_dumper.cpp:121
+#: utility/pck_dumper.cpp:279
+msgid "No errors detected."
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:166
+#: editor/gdre_dec_dlg.cpp:167
+#: editor/gdre_pck_dlg.cpp:314
+msgid "No files selected"
+msgstr ""
+
+#: gui/find_replace_bar.cpp:521
+msgid "No matches"
+msgstr ""
+
+#: gui/texture_layered_previewer.cpp:240
+#: gui/texture_previewer.cpp:263
+msgid "No Mipmaps"
+msgstr ""
+
+#: editor/gdre_editor.cpp:60
+#: standalone/gdre_config_dialog.tscn:211
+#: standalone/gdre_export_report.tscn:211
+#: standalone/gdre_main.tscn:113
+#: standalone/gdre_main.tscn:264
+msgid "OK"
+msgstr ""
+
+#: standalone/gdre_compile.tscn:115
+#: standalone/gdre_decompile.tscn:145
+#: standalone/gdre_new_pck.tscn:25
+#: standalone/gdre_patch_pck.tscn:349
+#: standalone/gdre_patch_translation.tscn:116
+#: standalone/gdre_recover.tscn:30
+msgid "Open a Directory"
+msgstr ""
+
+#: standalone/gdre_main.tscn:368
+#: standalone/gdre_new_pck.tscn:38
+#: standalone/gdre_patch_pck.tscn:22
+#: standalone/gdre_patch_translation.tscn:106
+#: standalone/gdre_recover.tscn:315
+msgid "Open a File"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:97
+msgid "Open a File or Directory"
+msgstr ""
+
+#: standalone/gdre_compile.tscn:105
+#: standalone/gdre_decompile.tscn:135
+#: standalone/gdre_main.tscn:304
+#: standalone/gdre_main.tscn:314
+#: standalone/gdre_main.tscn:323
+#: standalone/gdre_main.tscn:333
+#: standalone/gdre_main.tscn:344
+#: standalone/gdre_main.tscn:358
+#: standalone/gdre_patch_pck.tscn:32
+#: standalone/gdre_recover.tscn:327
+msgid "Open File(s)"
+msgstr ""
+
+#: standalone/gdre_export_report.tscn:206
+msgid "Open Folder"
+msgstr ""
+
+#: standalone/gdre_main.tscn:69
+#: standalone/gdre_main.tscn:74
+#: standalone/gdre_main.tscn:81
+msgid "Optional decryption script for games with custom encryption"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:91
+msgid "Options:"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:88
+msgid "Output files to directory"
+msgstr ""
+
+#: editor/gdre_editor.cpp:116
+msgid "Overwrite"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:10
+msgid "Patch PCK"
+msgstr ""
+
+#: standalone/gdre_main.tscn:179
+msgid "Patch PCK archive..."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:92
+msgid "Patch PCK directly"
+msgstr ""
+
+#: standalone/gdre_main.tscn:184
+msgid "Patch Translation..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:339
+#: standalone/gdre_main.tscn:173
+msgid "PCK"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:16
+msgid "PCK explorer"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:139
+msgid "PCK Files..."
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:82
+msgid "PCK version"
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:30
+msgid "PCK version (\"0\" - Godot 2.x; \"1\" - Godot 3.x; \"2\" - Godot 4.x):"
+msgstr ""
+
+#: utility/gdre_config.cpp:268
+msgid "Preview"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:22
+msgid "Project Recovery"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:32
+msgid "Project to Patch..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:333
+#: standalone/gdre_main.tscn:167
+msgid "Quit"
+msgstr ""
+
+#: editor/gdre_editor.cpp:323
+#: editor/gdre_editor.cpp:374
+#: standalone/gdre_main.tscn:145
+msgid "RE Tools"
+msgstr ""
+
+#: editor/gdre_editor.cpp:739
+#: editor/gdre_editor.cpp:741
+#: editor/gdre_editor.cpp:763
+#: editor/gdre_editor.cpp:866
+#: editor/gdre_editor.cpp:872
+#: editor/gdre_editor.cpp:874
+#: editor/gdre_editor.cpp:875
+#: utility/pck_dumper.cpp:113
+#: utility/pck_dumper.cpp:121
+#: utility/pck_dumper.cpp:276
+#: utility/pck_dumper.cpp:279
+msgid "Read PCK"
+msgstr ""
+
+#: utility/pck_dumper.cpp:77
+msgid "Reading PCK archive, click cancel to skip MD5 checking..."
+msgstr ""
+
+#: utility/pck_dumper.cpp:75
+msgid "Reading PCK archive..."
+msgstr ""
+
+#: standalone/gdre_main.tscn:148
+msgid "Recover Project..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:326
+#: editor/gdre_editor.cpp:378
+msgid "Recover project..."
+msgstr ""
+
+#: utility/gdre_config.cpp:273
+#: utility/gdre_config.cpp:279
+#: utility/gdre_config.cpp:284
+msgid "Recovery"
+msgstr ""
+
+#: editor/gdre_editor.cpp:868
+msgid "Recovery report"
+msgstr ""
+
+#: standalone/gdre_compile.tscn:61
+#: standalone/gdre_decompile.tscn:59
+msgid "Remove Files"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:53
+#: editor/gdre_dec_dlg.cpp:54
+msgid "Remove files"
+msgstr ""
+
+#: utility/gdre_config.cpp:328
+msgid "Remove generated Json context body"
+msgstr ""
+
+#: utility/gdre_config.cpp:383
+msgid "Remove physics bodies"
+msgstr ""
+
+#: utility/gdre_config.cpp:328
+msgid "Remove the body of generated JsonSourceGeneration context classes."
+msgstr ""
+
+#: utility/gdre_config.cpp:383
+msgid "Removes physics bodies (CollisionShape3D, CollisionObject3D, etc.) from the scene when exporting to GLTF"
+msgstr ""
+
+#: utility/gdre_config.cpp:388
+msgid "Replace shader materials"
+msgstr ""
+
+#: utility/gdre_config.cpp:388
+msgid "Replaces shader materials with generated standard materials when exporting the scene.\nSolves issues with exported scenes not having any textures.\nWARNING: This is experimental and may result in inaccurate exports."
+msgstr ""
+
+#: editor/gdre_editor.cpp:331
+#: editor/gdre_editor.cpp:383
+#: standalone/gdre_main.tscn:162
+msgid "Report a bug..."
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:172
+msgid "Reported Godot engine version (<minor>.<major>.<patch>)"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:198
+msgid "Reset to Defaults"
+msgstr ""
+
+#: editor/gdre_editor.cpp:358
+#: standalone/gdre_main.tscn:202
+msgid "Resources"
+msgstr ""
+
+#: standalone/gdre_main.tscn:251
+msgid "Resources, binary code and source code might be protected by copyright and trademark laws. Before using this software make sure that decompilation is not prohibited by the applicable license agreement, permitted under applicable law or you obtained explicit permission from the copyright owner.\n\nThe authors and copyright holders of this software do neither encourage nor condone the use of this software, and disclaim any liability for use of the software in violation of applicable laws.\n\nPlease report any bugs to the GitHub repository."
+msgstr ""
+
+#: standalone/gdre_media_player.tscn:86
+msgid "Sampling Rate: 48000\nLoop: No"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:251
+msgid "Save"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:32
+msgid "Save PCK..."
+msgstr ""
+
+#: editor/gdre_npck_dlg.cpp:115
+msgid "Save..."
+msgstr ""
+
+#: utility/gdre_config.cpp:356
+#: utility/gdre_config.cpp:362
+#: utility/gdre_config.cpp:368
+#: utility/gdre_config.cpp:373
+#: utility/gdre_config.cpp:378
+#: utility/gdre_config.cpp:383
+#: utility/gdre_config.cpp:388
+#: utility/gdre_config.cpp:393
+msgid "Scene"
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:165
+msgid "Scene Exporter"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+#: utility/gdre_config.cpp:297
+msgid "Script"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:74
+#: editor/gdre_dec_dlg.cpp:75
+#: standalone/gdre_compile.tscn:71
+#: standalone/gdre_decompile.tscn:91
+msgid "Script bytecode version:"
+msgstr ""
+
+#: editor/gdre_enc_key.cpp:26
+msgid "Script encryption key (64 character hex string):"
+msgstr ""
+
+#: standalone/gdre_compile.tscn:42
+#: standalone/gdre_decompile.tscn:39
+msgid "Script Files"
+msgstr ""
+
+#: editor/gdre_cmp_dlg.cpp:62
+#: editor/gdre_dec_dlg.cpp:63
+msgid "Script files:"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:226
+#: standalone/gdre_new_pck.tscn:74
+#: standalone/gdre_patch_pck.tscn:113
+#: standalone/gdre_patch_translation.tscn:168
+#: standalone/gdre_patch_translation.tscn:46
+#: standalone/gdre_recover.tscn:204
+#: standalone/gdre_recover.tscn:224
+msgid "Select"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:343
+msgid "Select \"Relative From...\" Mapping"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:321
+msgid "Select \"Relative To...\" Mapping"
+msgstr ""
+
+#: standalone/gdre_config_dialog.gd:206
+msgid "Select %s..."
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:66
+msgid "Select a directory..."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:82
+msgid "Select Action..."
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:218
+msgid "Select an exe..."
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:204
+msgid "Select Files..."
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:237
+msgid "Select Mapping"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:289
+#: standalone/gdre_recover.tscn:304
+msgid "Select Output Directory"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:203
+msgid "Select the C# assembly associated with this project..."
+msgstr ""
+
+#: utility/gdre_config.cpp:220
+msgid "Select the language used by the GDRE Tools interface."
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:143
+msgid "Select Translation to patch"
+msgstr ""
+
+#: editor/gdre_enc_key.cpp:33
+msgid "Set"
+msgstr ""
+
+#: standalone/gdre_main.tscn:70
+msgid "Set Custom Decryption Script..."
+msgstr ""
+
+#: standalone/gdre_main.tscn:39
+msgid "Set Encryption Key"
+msgstr ""
+
+#: editor/gdre_enc_key.cpp:18
+msgid "Set encryption key"
+msgstr ""
+
+#: standalone/gdre_main.tscn:58
+msgid "Set Encryption Key (64 char hex string...)"
+msgstr ""
+
+#: editor/gdre_editor.cpp:328
+#: editor/gdre_editor.cpp:380
+#: standalone/gdre_main.tscn:154
+msgid "Set encryption key..."
+msgstr ""
+
+#: standalone/gdre_config_dialog.tscn:23
+msgid "Settings"
+msgstr ""
+
+#: standalone/gdre_main.tscn:151
+msgid "Settings..."
+msgstr ""
+
+#: standalone/gdre_decompile.tscn:81
+msgid "Show Preview..."
+msgstr ""
+
+#: standalone/gdre_recover.tscn:284
+msgid "Show Resource Preview..."
+msgstr ""
+
+#: editor/gdre_editor.cpp:314
+msgid "Show this warning when starting the editor"
+msgstr ""
+
+#: utility/gdre_config.cpp:220
+msgid "Simplified Chinese"
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:48
+msgid "Size"
+msgstr ""
+
+#: utility/gdre_config.cpp:415
+msgid "Skip loading resource strings"
+msgstr ""
+
+#: utility/gdre_config.cpp:415
+msgid "Skip loading resource strings from all resources during translation recovery.\nDon't enable this without a key hint file."
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:305
+msgid "Some files have malformed names"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+msgid "Spaces"
+msgstr ""
+
+#: standalone/gdre_resource_preview.tscn:161
+msgid "Switch to Scene View"
+msgstr ""
+
+#: utility/gdre_config.cpp:220
+msgid "System default"
+msgstr ""
+
+#: utility/gdre_config.cpp:297
+msgid "Tab size"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+msgid "Tabs"
+msgstr ""
+
+#: utility/gdre_config.cpp:399
+msgid "Texture"
+msgstr ""
+
+#: utility/gdre_config.cpp:203
+msgid "The default parent folder to use for recovery.\nIf not set, the user's Desktop directory will be used."
+msgstr ""
+
+#: utility/gdre_config.cpp:178
+msgid "The maximum number of cores to use for threaded tasks (Extract, project recovery, etc.)"
+msgstr ""
+
+#: utility/gdre_config.cpp:297
+msgid "The number of spaces to use when decompiling and displaying scripts."
+msgstr ""
+
+#: editor/gdre_editor.cpp:1031
+#: editor/gdre_editor.cpp:1102
+#: editor/gdre_editor.cpp:1151
+#: editor/gdre_editor.cpp:1218
+#: editor/gdre_editor.cpp:630
+#: editor/gdre_editor.cpp:720
+#: editor/gdre_editor.cpp:928
+#: editor/gdre_editor.cpp:980
+#: utility/pck_dumper.cpp:121
+#: utility/pck_dumper.cpp:279
+msgid "The operation completed successfully!"
+msgstr ""
+
+#: utility/gdre_config.cpp:289
+msgid "The type of indentation to use when decompiling and displaying scripts."
+msgstr ""
+
+#: editor/gdre_editor.cpp:758
+#: editor/gdre_editor.cpp:761
+msgid "Total files:"
+msgstr ""
+
+#: utility/gdre_config.cpp:142
+#: utility/gdre_config.cpp:404
+#: utility/gdre_config.cpp:409
+#: utility/gdre_config.cpp:415
+#: utility/gdre_config.cpp:422
+msgid "Translation"
+msgstr ""
+
+#: standalone/gdre_patch_translation.tscn:53
+msgid "Translations to Patch"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:151
+msgid "Uncheck"
+msgstr ""
+
+#: standalone/gdre_recover.tscn:161
+msgid "Uncheck all"
+msgstr ""
+
+#: standalone/gdre_patch_pck.tscn:150
+#: standalone/gdre_recover.tscn:160
+msgid "Unchecks all shown files"
+msgstr ""
+
+#: utility/gdre_config.cpp:362
+msgid "Use double precision"
+msgstr ""
+
+#: utility/gdre_config.cpp:268
+msgid "Use scene view by default"
+msgstr ""
+
+#: utility/gdre_config.cpp:268
+msgid "Use scene view by default instead of the text preview.\nWARNING: Scene view is still experimental and certain scenes may cause the program to become unresponsive."
+msgstr ""
+
+#: utility/gdre_config.cpp:362
+msgid "Uses double precision for all floating-point values in the GLTF document"
+msgstr ""
+
+#: utility/gdre_config.cpp:318
+msgid "Verify NuGet package is from NuGet.org"
+msgstr ""
+
+#: utility/gdre_config.cpp:318
+msgid "Verify that the NuGet package is from NuGet.org before writing it to the project file.\nWARNING: This involves downloading the package from nuget.org and checking the hash of the downloaded package."
+msgstr ""
+
+#: editor/gdre_pck_dlg.cpp:33
+#: standalone/gdre_patch_pck.tscn:73
+msgid "Version:"
+msgstr ""
+
+#: standalone/gdre_new_pck.tscn:234
+msgid "Watermark text"
+msgstr ""
+
+#: utility/gdre_config.cpp:250
+msgid "Write a JSON report to the output directory after exporting."
+msgstr ""
+
+#: utility/gdre_config.cpp:250
+msgid "Write JSON report"
+msgstr ""
+
+#: utility/gdre_config.cpp:308
+msgid "Write NuGet package references"
+msgstr ""

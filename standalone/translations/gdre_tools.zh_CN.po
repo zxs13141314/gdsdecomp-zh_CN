@@ -468,3 +468,513 @@ msgstr "水印文本"
 
 msgid "Write NuGet package references"
 msgstr "写入 NuGet 包引用"
+
+msgid "\"Relative from...\" mapping"
+msgstr "“相对于来源...”映射"
+
+msgid "\"Relative to...\" mapping"
+msgstr "“相对于目标...”映射"
+
+msgid "$$$"
+msgstr "$$$"
+
+msgid "%d replaced."
+msgstr "已替换 %d 处。"
+
+msgid "%s Mipmaps"
+msgstr "%s Mipmap"
+
+msgid "(Optional)"
+msgstr "（可选）"
+
+msgid "*.gd,*.tres, etc."
+msgstr "*.gd、*.tres 等"
+
+msgid "--- Please select bytecode version ---"
+msgstr "--- 请选择字节码版本 ---"
+
+msgid "."
+msgstr "."
+
+msgid "0"
+msgstr "0"
+
+msgid "0 (Godot 1.x, 2.x)"
+msgstr "0（Godot 1.x、2.x）"
+
+msgid "0.0.0"
+msgstr "0.0.0"
+
+msgid "0:00.0 / 0:00.0"
+msgstr "0:00.0 / 0:00.0"
+
+msgid "1 (Godot 3.x)"
+msgstr "1（Godot 3.x）"
+
+msgid "2 (Godot 4.0-4.4)"
+msgstr "2（Godot 4.0-4.4）"
+
+msgid "3 (Godot 4.5-4.6)"
+msgstr "3（Godot 4.5-4.6）"
+
+msgid "4 (Godot 4.7+)"
+msgstr "4（Godot 4.7+）"
+
+msgid "<e.g. 000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F>"
+msgstr "<例如 000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F>"
+
+msgid "<info text>"
+msgstr "<信息文本>"
+
+msgid "<NONE>"
+msgstr "<NONE>（无）"
+
+msgid "[b]Important Notes[/b]"
+msgstr "[b]重要说明[/b]"
+
+msgid "[b]Info:[/b]"
+msgstr "[b]信息：[/b]"
+
+msgid "[b]Path:[/b]\n[b]Type:[/b]\n[b]Format:[/b]"
+msgstr "[b]路径：[/b]\n[b]类型：[/b]\n[b]格式：[/b]"
+
+msgid "[b]Totals[/b]"
+msgstr "[b]总计[/b]"
+
+msgid "[b]Use Godot editor version <GODOT_VER> to edit the project.[/b]\n<CUSTOM_VER_NOTE>"
+msgstr "[b]请使用 Godot 编辑器 <GODOT_VER> 版本编辑此项目。[/b]\n<CUSTOM_VER_NOTE>"
+
+msgid "[b]Version:[/b]"
+msgstr "[b]版本：[/b]"
+
+msgid "[color=#FF0000]ERROR[/color]"
+msgstr "[color=#FF0000]错误[/color]"
+
+msgid "Add .godot/imported/ (or .import/ for Godot 3) to the git repo."
+msgstr "将 .godot/imported/（Godot 3 使用 .import/）加入 Git 仓库。"
+
+msgid "Add Translation..."
+msgstr "添加翻译..."
+
+msgid "Ask for download"
+msgstr "询问是否下载"
+
+msgid "At least one error was detected!"
+msgstr "检测到至少一个错误！"
+
+msgid "Automatically detect binary plugin versions and download them from the asset library"
+msgstr "自动检测二进制插件版本并从资源库下载"
+
+msgid "Broken:"
+msgstr "损坏："
+
+msgid "By default, the C# language level is selected based on the default language level of the target framework of the module.\nThis setting forces the C# language level to be the specified value."
+msgstr "默认根据模块目标框架的默认语言级别选择 C# 语言级别。\n此设置会强制使用指定的 C# 语言级别。"
+
+msgid "By default, the exporter will only set KHR_node_visibility as an optional extension.\nThis setting forces the exporter to require the extension regardless of engine version."
+msgstr "默认情况下，导出器只会将 KHR_node_visibility 设为可选扩展。\n此设置会强制导出器要求该扩展，而不考虑引擎版本。"
+
+msgid "C# Assembly ⚠️"
+msgstr "C# 程序集 ⚠️"
+
+msgid "Certain assets have been written to the .assets directory!"
+msgstr "部分资源已写入 .assets 目录！"
+
+msgid "Check"
+msgstr "选中"
+
+msgid "Checked:"
+msgstr "已选中："
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Clear output directory except git before full recovery"
+msgstr "完整恢复前清空除 Git 外的输出目录"
+
+msgid "Clear the output directory except for the .git directory before running a full recovery (i.e. no includes/excludes)"
+msgstr "执行完整恢复（即未设置包含项或排除项）前，清空输出目录但保留 .git 目录"
+
+msgid "Compile the C# project after decompiling.\nThis is done to prevent editor errors when first opening the project in the editor.\nThis requires that you have the dotnet sdk installed."
+msgstr "反编译后编译 C# 项目。\n这可以防止首次在编辑器中打开项目时出现错误。\n需要安装 .NET SDK。"
+
+msgid "compiling"
+msgstr "正在编译"
+
+msgid "Compiling files..."
+msgstr "正在编译文件..."
+
+msgid "Convert OGG samples"
+msgstr "转换 OGG 采样"
+
+msgid "Convert resources"
+msgstr "转换资源"
+
+msgid "Convert textures"
+msgstr "转换纹理"
+
+msgid "Convert WAV samples"
+msgstr "转换 WAV 采样"
+
+msgid "Converting files..."
+msgstr "正在转换文件..."
+
+msgid "Copy referenced assemblies to the project directory."
+msgstr "将引用的程序集复制到项目目录。"
+
+msgid "Create a git repo in the output directory after exporting.\nRequires git to be installed on the system."
+msgstr "导出后在输出目录中创建 Git 仓库。\n需要系统已安装 Git。"
+
+msgid "Create a lossless .png copy of exported textures in '<OUTPUT_DIR>/.assets' if the texture is stored in a lossy format (e.g. jpeg)"
+msgstr "如果纹理以有损格式（如 JPEG）存储，则在 '<OUTPUT_DIR>/.assets' 中创建导出纹理的无损 PNG 副本"
+
+msgid "Create debug copies"
+msgstr "创建调试副本"
+
+msgid "Create patch PCK"
+msgstr "创建补丁 PCK"
+
+msgid "CSV File..."
+msgstr "CSV 文件..."
+
+msgid "decompiling"
+msgstr "正在反编译"
+
+msgid "Decompiling files..."
+msgstr "正在反编译文件..."
+
+msgid "Delete auto-converted files (*.gdc, etc.) after exporting. If disabled, the files will be moved to the `.autoconverted` folder."
+msgstr "导出后删除自动转换的文件（*.gdc 等）。禁用后，这些文件将移动到 `.autoconverted` 文件夹。"
+
+msgid "Detect and write NuGet package references to the project file instead of assembly references."
+msgstr "检测 NuGet 包引用并写入项目文件，而不是写入程序集引用。"
+
+msgid "Disable translation key recovery.\nThis will skip the translation key recovery process entirely."
+msgstr "禁用翻译键恢复。\n这将完全跳过翻译键恢复过程。"
+
+msgid "Do more stuff"
+msgstr "执行更多操作"
+
+msgid "Do other stuff"
+msgstr "执行其他操作"
+
+msgid "Do stuff"
+msgstr "执行操作"
+
+msgid "Dumps collected resource strings to '<OUTPUT_DIR>/.assets/resource_strings.stringdump'"
+msgstr "将收集到的资源字符串转储到 '<OUTPUT_DIR>/.assets/resource_strings.stringdump'"
+
+msgid "Emit ILInstruction annotations as comments for statement/expression nodes.\nIntended for debug verification of annotation propagation."
+msgstr "将 ILInstruction 注解作为语句/表达式节点的注释输出。\n用于调试验证注解传播。"
+
+msgid "en_us"
+msgstr "en_us"
+
+msgid "Enable more thorough translation key recovery.\nWARNING: this is not guaranteed to find all the keys in the translation file and may massively increase the time it takes to run."
+msgstr "启用更彻底的翻译键恢复。\n警告：无法保证找到翻译文件中的全部键，并且可能大幅增加运行时间。"
+
+msgid "Enable the LiftCollectionInitializers transform.\nIf disabled, the legacy RemoveBogusBaseConstructorCalls transform is used."
+msgstr "启用 LiftCollectionInitializers 转换。\n禁用后将使用旧版 RemoveBogusBaseConstructorCalls 转换。"
+
+msgid "Encryption Error"
+msgstr "加密错误"
+
+msgid "Error opening encrypted PCK file:"
+msgstr "打开加密 PCK 文件时出错："
+
+msgid "Error opening folder (or empty folder):"
+msgstr "打开文件夹（或空文件夹）时出错："
+
+msgid "Error opening PCK file:"
+msgstr "打开 PCK 文件时出错："
+
+msgid "Export resource"
+msgstr "导出资源"
+
+msgid "Export Resource..."
+msgstr "导出资源..."
+
+msgid "Export resources"
+msgstr "导出资源"
+
+msgid "Exporting resources..."
+msgstr "正在导出资源..."
+
+msgid "Extra tag:"
+msgstr "额外标签："
+
+msgid "Extract report"
+msgstr "提取报告"
+
+msgid "Extract..."
+msgstr "提取..."
+
+msgid "Extracting files..."
+msgstr "正在提取文件..."
+
+msgid "FAE doesn't exist...???"
+msgstr "FAE 不存在...???"
+
+msgid "File Error"
+msgstr "文件错误"
+
+msgid "File name"
+msgstr "文件名"
+
+msgid "Files already exist!"
+msgstr "文件已存在！"
+
+msgid "Files to patch..."
+msgstr "要修补的文件..."
+
+msgid "Filter Files"
+msgstr "筛选文件"
+
+msgid "Following files already exist and will be overwritten:"
+msgstr "以下文件已存在并将被覆盖："
+
+msgid "For development."
+msgstr "用于开发。"
+
+msgid "Forces all tasks to run on the main thread"
+msgstr "强制所有任务在主线程运行"
+
+msgid "Forces images to be saved as lossless PNGs when exporting to GLTF, regardless of the original image format"
+msgstr "导出为 GLTF 时强制将图像保存为无损 PNG，不考虑原始图像格式"
+
+msgid "Forces the bytecode revision to be the specified value."
+msgstr "强制使用指定的字节码修订版本。"
+
+msgid "Forces the export to export in multi-root mode, even if the scene is a single root"
+msgstr "强制以多根节点模式导出，即使场景只有一个根节点"
+
+msgid "GDExtension plugins have been detected.\nDo you want to automatically detect and download?"
+msgstr "检测到 GDExtension 插件。\n是否自动检测并下载？"
+
+msgid "git"
+msgstr "git"
+
+msgid "Godot engine version (\"Major\".\"Minor\".\"Patch\", \"Patch\" value should be \"0\" for all pre 3.2 versions):"
+msgstr "Godot 引擎版本（“主版本”.“次版本”.“补丁版本”，3.2 之前的版本应将“补丁版本”设为“0”）："
+
+msgid "If a project reference is detected, create an additional project and add it to the solution."
+msgstr "检测到项目引用时，创建额外项目并将其加入解决方案。"
+
+msgid "If the plugin was not downloaded, copy the template_release plugin (the library distributed with the game) to the editor plugin path (required for using the plugin in the editor)."
+msgstr "如果未下载插件，则将 template_release 插件（游戏附带的库）复制到编辑器插件路径（在编辑器中使用插件所必需）。"
+
+msgid "Ignore missing dependencies when exporting the scene."
+msgstr "导出场景时忽略缺失的依赖项。"
+
+msgid "Information:"
+msgstr "信息："
+
+msgid "Invalid bytecode version!"
+msgstr "字节码版本无效！"
+
+msgid "Invalid constant"
+msgstr "常量无效"
+
+msgid "Invalid encryption key (must be 64 characters long hex)"
+msgstr "加密密钥无效（必须是 64 个十六进制字符）"
+
+msgid "Invalid token"
+msgstr "标记无效"
+
+msgid "Last GDRE version used"
+msgstr "上次使用的 GDRE 版本"
+
+msgid "Last showed disclaimer"
+msgstr "上次显示免责声明的版本"
+
+msgid "Load a custom bytecode file."
+msgstr "加载自定义字节码文件。"
+
+msgid "Load a key hint file to use for the translation exporter"
+msgstr "加载供翻译导出器使用的键提示文件"
+
+msgid "Load embedded zips within the project pack as part of project loading/recovery"
+msgstr "在加载或恢复项目时加载项目包内嵌的 ZIP"
+
+msgid "Loading GDScript cache..."
+msgstr "正在加载 GDScript 缓存..."
+
+msgid "Loading import files..."
+msgstr "正在加载导入文件..."
+
+msgid "Loading packed OBDB resources..."
+msgstr "正在加载打包的 OBDB 资源..."
+
+msgid "Loading resource strings..."
+msgstr "正在加载资源字符串..."
+
+msgid "Locales to patch..."
+msgstr "要修补的语言区域..."
+
+msgid "Log file written to <LOG_FILE_URI>\n[b]Please include this file when reporting an issue![/b]"
+msgstr "日志文件已写入 <LOG_FILE_URI>\n[b]报告问题时请附上此文件！[/b]"
+
+msgid "Map selected to Folder..."
+msgstr "将选中项映射到文件夹..."
+
+msgid "Memory: %s"
+msgstr "内存：%s"
+
+msgid "New PCK"
+msgstr "新建 PCK"
+
+msgid "No bytecode version selected"
+msgstr "未选择字节码版本"
+
+msgid "No destination folder selected"
+msgstr "未选择目标文件夹"
+
+msgid "No encryption key"
+msgstr "未设置加密密钥"
+
+msgid "No files selected"
+msgstr "未选择文件"
+
+msgid "No matches"
+msgstr "无匹配项"
+
+msgid "No Mipmaps"
+msgstr "无 Mipmap"
+
+msgid "Optional decryption script for games with custom encryption"
+msgstr "用于自定义加密游戏的可选解密脚本"
+
+msgid "Options:"
+msgstr "选项："
+
+msgid "Output files to directory"
+msgstr "将文件输出到目录"
+
+msgid "Overwrite"
+msgstr "覆盖"
+
+msgid "Patch PCK directly"
+msgstr "直接修补 PCK"
+
+msgid "PCK"
+msgstr "PCK"
+
+msgid "PCK version (\"0\" - Godot 2.x; \"1\" - Godot 3.x; \"2\" - Godot 4.x):"
+msgstr "PCK 版本（“0” - Godot 2.x；“1” - Godot 3.x；“2” - Godot 4.x）："
+
+msgid "Project to Patch..."
+msgstr "要修补的项目..."
+
+msgid "Read PCK"
+msgstr "读取 PCK"
+
+msgid "Reading PCK archive, click cancel to skip MD5 checking..."
+msgstr "正在读取 PCK 归档，点击取消可跳过 MD5 检查..."
+
+msgid "Reading PCK archive..."
+msgstr "正在读取 PCK 归档..."
+
+msgid "Recovery report"
+msgstr "恢复报告"
+
+msgid "Remove the body of generated JsonSourceGeneration context classes."
+msgstr "移除生成的 JsonSourceGeneration 上下文类的方法体。"
+
+msgid "Removes physics bodies (CollisionShape3D, CollisionObject3D, etc.) from the scene when exporting to GLTF"
+msgstr "导出为 GLTF 时从场景中移除物理体（CollisionShape3D、CollisionObject3D 等）"
+
+msgid "Replaces shader materials with generated standard materials when exporting the scene.\nSolves issues with exported scenes not having any textures.\nWARNING: This is experimental and may result in inaccurate exports."
+msgstr "导出场景时使用生成的标准材质替换着色器材质。\n用于解决导出场景没有纹理的问题。\n警告：此功能仍处于实验阶段，可能导致导出结果不准确。"
+
+msgid "Reported Godot engine version (<minor>.<major>.<patch>)"
+msgstr "报告的 Godot 引擎版本（<minor>.<major>.<patch>）"
+
+msgid "Resources, binary code and source code might be protected by copyright and trademark laws. Before using this software make sure that decompilation is not prohibited by the applicable license agreement, permitted under applicable law or you obtained explicit permission from the copyright owner.\n\nThe authors and copyright holders of this software do neither encourage nor condone the use of this software, and disclaim any liability for use of the software in violation of applicable laws.\n\nPlease report any bugs to the GitHub repository."
+msgstr "资源、二进制代码和源代码可能受版权法与商标法保护。使用本软件前，请确认相关许可协议未禁止反编译、适用法律允许反编译，或你已获得版权所有者的明确许可。\n\n本软件的作者和版权所有者既不鼓励也不纵容违法使用本软件，并且不对任何违反适用法律的使用行为承担责任。\n\n如发现问题，请在 GitHub 仓库中报告。"
+
+msgid "Sampling Rate: 48000\nLoop: No"
+msgstr "采样率：48000\n循环：否"
+
+msgid "Save..."
+msgstr "保存..."
+
+msgid "Script encryption key (64 character hex string):"
+msgstr "脚本加密密钥（64 个十六进制字符）："
+
+msgid "Script files:"
+msgstr "脚本文件："
+
+msgid "Select \"Relative From...\" Mapping"
+msgstr "选择“相对于来源...”映射"
+
+msgid "Select \"Relative To...\" Mapping"
+msgstr "选择“相对于目标...”映射"
+
+msgid "Select a directory..."
+msgstr "选择目录..."
+
+msgid "Select an exe..."
+msgstr "选择 EXE..."
+
+msgid "Select Mapping"
+msgstr "选择映射"
+
+msgid "Select the C# assembly associated with this project..."
+msgstr "选择与此项目关联的 C# 程序集..."
+
+msgid "Select Translation to patch"
+msgstr "选择要修补的翻译"
+
+msgid "Set"
+msgstr "设置"
+
+msgid "Set encryption key"
+msgstr "设置加密密钥"
+
+msgid "Show this warning when starting the editor"
+msgstr "启动编辑器时显示此警告"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Skip loading resource strings from all resources during translation recovery.\nDon't enable this without a key hint file."
+msgstr "翻译恢复期间跳过从所有资源加载资源字符串。\n没有键提示文件时请勿启用。"
+
+msgid "Some files have malformed names"
+msgstr "部分文件名格式异常"
+
+msgid "The default parent folder to use for recovery.\nIf not set, the user's Desktop directory will be used."
+msgstr "恢复时使用的默认父文件夹。\n未设置时将使用用户的桌面目录。"
+
+msgid "The maximum number of cores to use for threaded tasks (Extract, project recovery, etc.)"
+msgstr "线程任务（提取、项目恢复等）可使用的最大核心数"
+
+msgid "The number of spaces to use when decompiling and displaying scripts."
+msgstr "反编译和显示脚本时使用的空格数。"
+
+msgid "The type of indentation to use when decompiling and displaying scripts."
+msgstr "反编译和显示脚本时使用的缩进类型。"
+
+msgid "Total files:"
+msgstr "文件总数："
+
+msgid "Uncheck"
+msgstr "取消选中"
+
+msgid "Use scene view by default instead of the text preview.\nWARNING: Scene view is still experimental and certain scenes may cause the program to become unresponsive."
+msgstr "默认使用场景视图而不是文本预览。\n警告：场景视图仍处于实验阶段，某些场景可能导致程序无响应。"
+
+msgid "Uses double precision for all floating-point values in the GLTF document"
+msgstr "对 GLTF 文档中的所有浮点值使用双精度"
+
+msgid "Verify that the NuGet package is from NuGet.org before writing it to the project file.\nWARNING: This involves downloading the package from nuget.org and checking the hash of the downloaded package."
+msgstr "写入项目文件前验证 NuGet 包是否来自 NuGet.org。\n警告：此操作会从 nuget.org 下载包并检查下载包的哈希值。"
+
+msgid "Write a JSON report to the output directory after exporting."
+msgstr "导出后将 JSON 报告写入输出目录。"
+
+msgid "Write JSON report"
+msgstr "写入 JSON 报告"
+
+msgid "@tool\nclass_name FOO\nextends Node\n@export var string_prop: String = \"haldo\"\nfunc thingy():\n\tvar foo = 1\n\tvar bl = true\n\tvar bar = \"var\"\n\tvar baz: Color = Color(0.1,0.2,0.3)\n\tvar far: float = baz.r\n\tvar string_name: StringName = &\"haldo\"\n\tvar barf: NodePath = ^\"farts/lmao\"\n\t$Cam / Camera2D.drag_margin_left = margin\n\t$Cam / Camera2D.drag_margin_right = margin\n\tvar node_id = $Path/To/Node\n\tvar node_id_2 = $Path/To/\"A\"/Node/With/\"Some Spaces\"/In/It.thing()\n# this is a really long comment that is going to wrap around the text box!\n\tlerp()\n\tpass\n#  haldodelimiter_comments\n# NOTE: This is a note\n# BUG: This is a warning\n# ALERT: this is a critical"
+msgstr "@tool\nclass_name FOO\nextends Node\n@export var string_prop: String = \"haldo\"\nfunc thingy():\n\tvar foo = 1\n\tvar bl = true\n\tvar bar = \"var\"\n\tvar baz: Color = Color(0.1,0.2,0.3)\n\tvar far: float = baz.r\n\tvar string_name: StringName = &\"haldo\"\n\tvar barf: NodePath = ^\"farts/lmao\"\n\t$Cam / Camera2D.drag_margin_left = margin\n\t$Cam / Camera2D.drag_margin_right = margin\n\tvar node_id = $Path/To/Node\n\tvar node_id_2 = $Path/To/\"A\"/Node/With/\"Some Spaces\"/In/It.thing()\n# this is a really long comment that is going to wrap around the text box!\n\tlerp()\n\tpass\n#  haldodelimiter_comments\n# NOTE: This is a note\n# BUG: This is a warning\n# ALERT: this is a critical"

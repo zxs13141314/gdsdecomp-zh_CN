@@ -36,7 +36,7 @@ jobs:
         run: git diff --exit-code -- standalone/translations/gdre_tools.pot
 
       - name: Validate Simplified Chinese translation
-        run: python tools/i18n/check_translations.py
+        run: python tools/i18n/check_translations.py --require-complete
 
   build:
     needs: validate-translations

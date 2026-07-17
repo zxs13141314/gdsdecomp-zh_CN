@@ -44,6 +44,10 @@ function Get-GodotUserSettingsPath {
 }
 
 function Get-VersionInfo {
+    if (-not [string]::IsNullOrWhiteSpace($env:GDRE_VERSION_OVERRIDE)) {
+        return $env:GDRE_VERSION_OVERRIDE.Trim()
+    }
+
     # Try to find git command
     $git = Get-Command git -ErrorAction SilentlyContinue
     $versionInfo = "unknown"

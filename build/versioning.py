@@ -1,3 +1,4 @@
+import os
 import re
 import shutil
 from pathlib import Path
@@ -16,6 +17,10 @@ def doproc(cmd, cwd=None):
 
 
 def get_version_info(repository_dir=None):
+    version_override = os.environ.get("GDRE_VERSION_OVERRIDE")
+    if version_override:
+        return version_override
+
     git = shutil.which("git")
     version_info = "unknown"
     if git is None:
